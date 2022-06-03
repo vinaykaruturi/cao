@@ -1,11 +1,12 @@
-# APEX Pipeline Simulator v2.0
-A template for 5 Stage APEX In-order Pipeline
+# APEX Pipeline Simulator 
+Out of order processor Simulator (ROB, LSQ, BTB, ISSUE_QUEUE, RENAME TABLE) 
 
 ## Notes:
 
- - This code is a simple implementation template of a working 5-Stage APEX In-order Pipeline
+ - This code is a simple implementation Out of order Pipeline
  - Implementation is in `C` language
- - Stages: Fetch -> Decode -> Execute -> Memory -> Writeback
+ - Stages: Fetch -> Decode Rename -> Renmame Dispatch -> Functional Units->  Physical Writeback-> ROB commit
+ -                                                    -> Memory Unit     ->
  - You can read, modify and build upon given code-base to add other features as required in project description
  - You are also free to write your own implementation from scratch
  - All the stages have latency of one cycle
@@ -39,10 +40,6 @@ A template for 5 Stage APEX In-order Pipeline
 
 ## Author
 
- - Copyright (C) Gaurav Kothari (gkothar1@binghamton.edu)
+ - Copyright (C) Vinay Kumar Karuturi (vkarutu1@binghamton.edu)
  - State University of New York, Binghamton
 
-## Bugs
-
- - Please contact your TAs for any assistance or query
- - Report bugs at: gkothar1@binghamton.edu# cao
